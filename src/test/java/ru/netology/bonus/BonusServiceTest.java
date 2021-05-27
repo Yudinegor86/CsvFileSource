@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BonusServiceTest {
   @ParameterizedTest
-  @CsvFileSource(resources = "/data.csv" , numLinesToSkip = 1)
+  @CsvFileSource(resources = "/data.csv")
   void shouldCalculate(String test, long amount, boolean registered, long expected) {
       BonusService service = new BonusService();
 
